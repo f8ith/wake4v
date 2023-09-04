@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="wake4v">
+    <output-path>$PROJECT_DIR$/out/artifacts/wake4v</output-path>
+    <root id="archive" name="wake4v.jar">
+      <element id="module-output" name="wake4v.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.electronwill.night-config/core/3.6.0/412f2edf0ef6cc9178ab38751af4e507f413bef/core-3.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.electronwill.night-config/toml/3.6.0/f0c2c48748bdfc8d1f3798ec478f003bccc7e0b1/toml-3.6.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
