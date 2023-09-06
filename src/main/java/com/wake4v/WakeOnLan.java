@@ -5,7 +5,7 @@ public class WakeOnLan {
 
     public static final int PORT = 9;
 
-    public static void wake(InetAddress address, String macStr) {
+    public static void wake(String addressStr, String macStr) {
 
         try {
             byte[] macBytes = getMacBytes(macStr);
@@ -17,6 +17,7 @@ public class WakeOnLan {
                 System.arraycopy(macBytes, 0, bytes, i, macBytes.length);
             }
 
+            InetAddress address = InetAddress.getByName(addressStr);
             DatagramPacket packet = new DatagramPacket(bytes, bytes.length, address, PORT);
             DatagramSocket socket = new DatagramSocket();
             socket.send(packet);
